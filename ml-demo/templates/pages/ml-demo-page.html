@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.4.0/dist/tf.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="static/css/ml-demo.css">
+</head>
+<body>
+    <div class="tabs">
+        <button class="tab-button active" data-model="linear">Linear Regression</button>
+        <button class="tab-button" data-model="logistic">Logistic Regression</button>
+    </div>
+    
+    <div id="linear-section" class="model-section active">
+        <h4>Drag any dot to see the regression line update.</h4>
+        <div class="chart-container">
+            <svg id="plotArea_linear" class="plot-area"></svg>
+        </div>
+    </div>
+    
+    <div id="logistic-section" class="model-section">
+        <h4>Click anywhere on the plot to add a new data point and see its classification.</h4>
+        <div class="chart-container">
+            <svg id="plotArea_logistic" class="plot-area"></svg>
+        </div>
+    </div>
+
+    <div id="loading-screen">
+        <img src="static/images/loading.gif" alt="Loading...">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.4.0/dist/tf.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <script src="static/js/ml-demo.js"></script>
+</body>
+</html>

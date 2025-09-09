@@ -1,0 +1,19 @@
+{
+    "site_name": "Sitthipong | My Journey",
+    "base_url": "https://manosamaba.github.io",
+    "author": {
+      "name": "Sitthipong Manotham",
+      "headline": "Data Analysis & Visualization | Python for Insights",
+      "motto": "Passionate turning raw data into clear decisions",
+      "location": "Tokyo, Japan",
+      "email": "sitthipong19@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/smanotham",
+      "github": "https://github.com/manosamaba"
+    },
+    "seo": {
+      "description": "",
+      "image": "",
+      "keywords": []
+    }
+}
+  

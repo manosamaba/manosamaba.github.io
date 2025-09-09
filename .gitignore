@@ -1,0 +1,10 @@
+# Python-related files
+__pycache__/
+*.pyc
+*.pyo
+
+# Build files
+.env
+/.cache
+dist/
+venv/

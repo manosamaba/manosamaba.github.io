@@ -1,0 +1,357 @@
+{
+    "salesData": [
+        {
+            "date": "2025-01-01",
+            "sales": 565
+        },
+        {
+            "date": "2025-01-02",
+            "sales": 1201
+        },
+        {
+            "date": "2025-01-03",
+            "sales": 850
+        },
+        {
+            "date": "2025-01-04",
+            "sales": 1440
+        },
+        {
+            "date": "2025-01-05",
+            "sales": 539
+        },
+        {
+            "date": "2025-01-06",
+            "sales": 1464
+        },
+        {
+            "date": "2025-01-07",
+            "sales": 1279
+        },
+        {
+            "date": "2025-01-08",
+            "sales": 660
+        },
+        {
+            "date": "2025-01-09",
+            "sales": 835
+        },
+        {
+            "date": "2025-01-10",
+            "sales": 581
+        },
+        {
+            "date": "2025-01-11",
+            "sales": 1122
+        },
+        {
+            "date": "2025-01-12",
+            "sales": 1185
+        },
+        {
+            "date": "2025-01-13",
+            "sales": 1824
+        },
+        {
+            "date": "2025-01-14",
+            "sales": 735
+        },
+        {
+            "date": "2025-01-15",
+            "sales": 998
+        },
+        {
+            "date": "2025-01-16",
+            "sales": 1886
+        },
+        {
+            "date": "2025-01-17",
+            "sales": 732
+        },
+        {
+            "date": "2025-01-18",
+            "sales": 1772
+        },
+        {
+            "date": "2025-01-19",
+            "sales": 1133
+        },
+        {
+            "date": "2025-01-20",
+            "sales": 1425
+        },
+        {
+            "date": "2025-01-21",
+            "sales": 1666
+        },
+        {
+            "date": "2025-01-22",
+            "sales": 943
+        },
+        {
+            "date": "2025-01-23",
+            "sales": 846
+        },
+        {
+            "date": "2025-01-24",
+            "sales": 826
+        },
+        {
+            "date": "2025-01-25",
+            "sales": 728
+        },
+        {
+            "date": "2025-01-26",
+            "sales": 1289
+        },
+        {
+            "date": "2025-01-27",
+            "sales": 1651
+        },
+        {
+            "date": "2025-01-28",
+            "sales": 769
+        },
+        {
+            "date": "2025-01-29",
+            "sales": 659
+        },
+        {
+            "date": "2025-01-30",
+            "sales": 903
+        },
+        {
+            "date": "2025-01-31",
+            "sales": 1601
+        }
+    ],
+    "asinData": [
+        {
+            "asin": "B08XYZ123A",
+            "revenue": 45000,
+            "rating": 4.8
+        },
+        {
+            "asin": "B08XYZ123B",
+            "revenue": 32000,
+            "rating": 4.2
+        },
+        {
+            "asin": "B08XYZ123C",
+            "revenue": 25000,
+            "rating": 4.5
+        },
+        {
+            "asin": "B08XYZ123D",
+            "revenue": 18000,
+            "rating": 3.9
+        },
+        {
+            "asin": "B08XYZ123E",
+            "revenue": 12000,
+            "rating": 4.1
+        }
+    ],
+    "buyerData": [
+        {
+            "state": "Alabama",
+            "orders": 94
+        },
+        {
+            "state": "Alaska",
+            "orders": 1485
+        },
+        {
+            "state": "Arizona",
+            "orders": 1285
+        },
+        {
+            "state": "Arkansas",
+            "orders": 284
+        },
+        {
+            "state": "California",
+            "orders": 1144
+        },
+        {
+            "state": "Colorado",
+            "orders": 550
+        },
+        {
+            "state": "Connecticut",
+            "orders": 878
+        },
+        {
+            "state": "Delaware",
+            "orders": 1229
+        },
+        {
+            "state": "Florida",
+            "orders": 54
+        },
+        {
+            "state": "Georgia",
+            "orders": 213
+        },
+        {
+            "state": "Hawaii",
+            "orders": 390
+        },
+        {
+            "state": "Idaho",
+            "orders": 226
+        },
+        {
+            "state": "Illinois",
+            "orders": 1083
+        },
+        {
+            "state": "Indiana",
+            "orders": 896
+        },
+        {
+            "state": "Iowa",
+            "orders": 1530
+        },
+        {
+            "state": "Kansas",
+            "orders": 531
+        },
+        {
+            "state": "Kentucky",
+            "orders": 1478
+        },
+        {
+            "state": "Louisiana",
+            "orders": 1209
+        },
+        {
+            "state": "Maine",
+            "orders": 1689
+        },
+        {
+            "state": "Maryland",
+            "orders": 1279
+        },
+        {
+            "state": "Massachusetts",
+            "orders": 335
+        },
+        {
+            "state": "Michigan",
+            "orders": 1484
+        },
+        {
+            "state": "Minnesota",
+            "orders": 514
+        },
+        {
+            "state": "Mississippi",
+            "orders": 468
+        },
+        {
+            "state": "Missouri",
+            "orders": 781
+        },
+        {
+            "state": "Montana",
+            "orders": 448
+        },
+        {
+            "state": "Nebraska",
+            "orders": 1020
+        },
+        {
+            "state": "Nevada",
+            "orders": 943
+        },
+        {
+            "state": "New Hampshire",
+            "orders": 351
+        },
+        {
+            "state": "New Jersey",
+            "orders": 1146
+        },
+        {
+            "state": "New Mexico",
+            "orders": 214
+        },
+        {
+            "state": "New York",
+            "orders": 1704
+        },
+        {
+            "state": "North Carolina",
+            "orders": 866
+        },
+        {
+            "state": "North Dakota",
+            "orders": 1971
+        },
+        {
+            "state": "Ohio",
+            "orders": 763
+        },
+        {
+            "state": "Oklahoma",
+            "orders": 1617
+        },
+        {
+            "state": "Oregon",
+            "orders": 441
+        },
+        {
+            "state": "Pennsylvania",
+            "orders": 1399
+        },
+        {
+            "state": "Rhode Island",
+            "orders": 1540
+        },
+        {
+            "state": "South Carolina",
+            "orders": 307
+        },
+        {
+            "state": "South Dakota",
+            "orders": 1518
+        },
+        {
+            "state": "Tennessee",
+            "orders": 1355
+        },
+        {
+            "state": "Texas",
+            "orders": 956
+        },
+        {
+            "state": "Utah",
+            "orders": 1558
+        },
+        {
+            "state": "Vermont",
+            "orders": 1243
+        },
+        {
+            "state": "Virginia",
+            "orders": 1832
+        },
+        {
+            "state": "Washington",
+            "orders": 1947
+        },
+        {
+            "state": "West Virginia",
+            "orders": 488
+        },
+        {
+            "state": "Wisconsin",
+            "orders": 741
+        },
+        {
+            "state": "Wyoming",
+            "orders": 434
+        }
+    ]
+}

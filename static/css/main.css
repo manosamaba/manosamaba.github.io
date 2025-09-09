@@ -1,0 +1,270 @@
+/* Ensure PrimeIcons font is used for all icon elements */
+.pi {
+    font-family: "PrimeIcons" !important;
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Sarabun';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/static/fonts/sarabun-v16-thai-regular.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/static/fonts/lato-v24-latin-regular.woff2') format('woff2'); 
+}
+:lang(th) {
+    font-family: 'Sarabun', sans-serif;
+}
+:lang(en) {
+    font-family: 'Sarabun', sans-serif;
+}
+
+/* ------------------------------------------------------------- */
+/* Base styles for the alternating timeline (for large screens) */
+/* ------------------------------------------------------------- */
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The vertical line in the middle */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #dee2e6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 0; /* Ensures the line is always at the bottom layer */
+}
+
+/* Styles for each timeline item */
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+/* Wrapper to position the marker on the line */
+.timeline-marker-wrapper {
+    position: absolute;
+    top: 15px;
+    z-index: 2; /* Increased z-index to be above the line and date */
+}
+
+/* The circular marker that holds the icon */
+.timeline-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Sizing for the icon inside the dot */
+.timeline-dot .pi {
+    font-size: 20px;
+}
+
+/* Left-aligned items */
+.left-item {
+    left: 0;
+}
+
+.left-item .timeline-marker-wrapper {
+    right: -15px;
+}
+
+/* Right-aligned items */
+.right-item {
+    left: 50%;
+}
+
+.right-item .timeline-marker-wrapper {
+    left: -15px;
+}
+
+/* Color classes for the timeline dots */
+.timeline-dot.education {
+    background-color: #18bc9c;
+}
+.timeline-dot.work {
+    background-color: #3498db;
+}
+.timeline-dot.activity {
+    background-color: #e74c3c;
+}
+.timeline-dot.award {
+    background-color: #ff9800; /* Orange color for awards */
+}
+.timeline-dot.conference {
+    background-color: #e74c3c; /* A professional gray color for conference */
+}
+.timeline-dot.job-training {
+    background-color: #f39c12; /* A professional orange color for training */
+}
+.timeline-dot.business {
+    background-color: #107EB0;
+}
+.timeline-dot.project {
+    background-color: #9b59b6; /* A clean purple */
+}
+
+/* Media placeholder styling */
+.timeline-media img,
+.timeline-media iframe {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* New CSS for a more robust Grid Layout */
+.timeline-content .timeline-info-grid {
+    display: grid;
+    /* First column fits the content (icon/logo), second column takes the rest of the space */
+    grid-template-columns: min-content 1fr;
+    align-items: center; /* Vertically aligns the items in the middle */
+    gap: 10px; /* Adjusts the space between the icon/logo and the text */
+    margin-bottom: 5px; /* Adds space below the row */
+}
+
+/* Ensure the logo and icon are correctly sized within the grid */
+.timeline-info-grid .timeline-logo {
+    max-width: 24px;
+}
+
+.timeline-info-grid .pi {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+/* Hover effect for custom timeline link */
+.timeline-link:hover p {
+    color: #1a5e4d;/* Darker green color on hover */
+}
+
+/* Reduce spacing for key skills list items */
+.timeline-content .list-group-item {
+    /* Set vertical padding to a smaller value (e.g., 0.25rem) */
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    
+    /* Remove any default margin */
+    margin-bottom: 0;
+}
+
+
+
+/* Styling for the date below the timeline marker (for large screens) */
+.timeline-item .timeline-date {
+    font-weight: bold;
+    z-index: 1;
+}
+
+.timeline-item.left-item .timeline-date {
+    position: absolute;
+    right: -13px; /* Adjust to align with the dot */
+    top: 50px; /* Adjust vertical position */
+    white-space: nowrap;
+}
+
+.timeline-item.right-item .timeline-date {
+    position: absolute;
+    left: -13px; /* Adjust to align with the dot */
+    top: 50px; /* Adjust vertical position */
+    white-space: nowrap;
+}
+
+
+/* ------------------------------------------------------------- */
+/* Mobile responsive styles */
+/* ------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+    /* Make the timeline a single column */
+    .timeline-container::after {
+        left: 31px; /* The vertical line is at 31px from the left */
+    }
+
+    .timeline-item,
+    .left-item,
+    .right-item {
+        width: 100%;
+        padding-left: 70px; /* Make space for the dot and line */
+        padding-right: 15px;
+        left: 0;
+    }
+
+    /* Position the dot wrapper to align with the vertical line */
+    .left-item .timeline-marker-wrapper,
+    .right-item .timeline-marker-wrapper {
+        left: 16px;
+        right: auto;
+    }
+    
+    /* Corrected: Position the date for BOTH odd and even items correctly */
+    .timeline-item.left-item .timeline-date,
+    .timeline-item.right-item .timeline-date {
+        position: absolute;
+        left: 16px; /* Align with the dot */
+        top: 50px; /* Adjust vertical position */
+        white-space: nowrap;
+    }
+    .timeline-media img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+#demoIframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+/* กำหนดค่าเริ่มต้นสำหรับทุกขนาดหน้าจอ */
+.modal-dialog {
+    max-width: 1280px;
+    margin: 1.75rem auto;
+    width: auto;
+}
+
+.modal-content {
+    /* ความสูงที่ต้องการสำหรับจอขนาดใหญ่ */
+    min-height: 60vh;
+}
+
+.modal-body {
+    /* ทำให้เนื้อหามีขนาดเต็มความกว้างของ modal-content */
+    padding: 0;
+    display: flex; /* ทำให้ iframe สามารถยืดได้ */
+    flex-direction: column;
+}
+
+.modal-body .ratio {
+    /* ทำให้ iframe container ยืดเต็มพื้นที่ที่เหลือ */
+    flex-grow: 1;
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+    .modal-dialog {
+        /* On small screens, let it fill the full width */
+        width: 100%;
+        margin: 0;
+    }
+    .modal-content {
+        min-height: 70vh;
+    }
+    .modal-body {
+        max-height: 70vh; /* Adjust max height for mobile scroll */
+    }
+}

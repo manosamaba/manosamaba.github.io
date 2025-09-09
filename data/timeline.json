@@ -1,0 +1,354 @@
+[
+  {
+    "status": "Exploring Machine Learning with Hands-on Projects",
+    "date": "2025",
+    "type": "project",
+    "icon": "pi pi-chart-line",
+    "description": "Began developing foundational Machine Learning projects using linear and logistic regression on sample datasets. Built an interactive 'playground' for visualization, with ongoing updates planned for real-world data integration.",
+    "company_name": "Self-Learning Project",
+    "country": "Tokyo, Japan",
+    "key_skills": [
+        "Machine Learning",
+        "Data Visualization",
+        "JavaScript",
+        "D3.js",
+        "TensorFlow.js",
+        "Linear Regression",
+        "Logistic Regression"
+    ],
+    "demo_links": [
+      {
+        "name": "ML Playground",
+        "url": "ml-demo/index.html"
+    }
+  ]
+  },
+  {
+    "status": "Event-Driven Market Replay",
+    "date": "2025",
+    "type": "project",
+    "icon": "pi pi-chart-line",
+    "description": "Built a Python-based system to replay historical market data, simulate trading scenarios, and visualize the impact of major macro events.",
+    "company_name": "Self-Learning Project",
+    "country": "Tokyo, Japan",
+    "key_skills": [
+      "Python",
+      "Data Analysis",
+      "Market Data",
+      "Data Visualization"
+    ]
+  },
+  {
+    "status": "3'rd time Tokyo Marathon",
+    "date": "2025",
+    "type": "activity",
+    "icon": "pi pi-star-fill",
+    "description": "My third time running the Tokyo Marathon. The atmosphere was full of energy and excitement, with plenty of food along the course and cheerful supporters all the way, making the run truly enjoyable.",
+    "country": "Tokyo, Japan",
+    "media": {
+      "type": "image",
+      "url": "static/images/tokyo_marathon.webp"
+    }
+  },
+  {
+    "status": "Chrome Extension for Integrated Market Analysis",
+    "date": "2024",
+    "type": "project",
+    "icon": "pi pi-chart-line",
+    "description": "Developed a Chrome extension designed to simplify stock market analysis by aggregating key data from multiple sources onto a single trading chart. The tool gathers crucial information such as important news, SET reports, shareholder activity, and insider transactions, and plots it directly onto the stock graph for comprehensive historical and real-time analysis.",
+    "company_name": "Self-Learning Project",
+    "country": "Tokyo, Japan",
+    "key_skills": [
+        "Chrome Extension Development",
+        "API Integration",
+        "Data Aggregation",
+        "Data Visualization",
+        "Financial Data Analysis",
+        "JavaScript",
+        "UI/UX Design"
+    ],
+    "media": {
+      "type": "youtube",
+      "url": "https://www.youtube.com/watch?v=kIGB1hhtzqY",
+      "embed_code": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/kIGB1hhtzqY?si=juAMvh6jhAM3X7eC\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "status": "Fuji's Fourth Round: Sun-less Summit",
+    "date": "2023",
+    "type": "activity",
+    "icon": "pi pi-star-fill",
+    "description": "The sunrise was a no-show, thanks to a surprise storm. But, at least we got some great photos on the way down!",
+    "country": "Yamanashi, Japan",
+    "media": {
+      "type": "image",
+      "url": "static/images/fuji.webp"
+    }
+  },
+  {
+    "status": "Market Analysis Chatbot",
+    "date": "2022",
+    "type": "project",
+    "icon": "pi pi-comments",
+    "description": "Developed an automated system for real-time market analysis, delivered via a LINE chatbot. The system was built with Python, FastAPI, and Firebase, leveraging Google Cloud Functions for a serverless backend. It integrated with the SET and TwelveData APIs to provide users with instant, chart-based insights and analysis.",
+    "company_name": "Self-Learning Project",
+    "country": "Tokyo, Japan",
+    "key_skills": [
+        "Python",
+        "FastAPI",
+        "Firebase",
+        "Google Cloud Functions",
+        "API Integration",
+        "Backend Development",
+        "Data Analysis",
+        "Chatbot Development"
+    ],
+    "media": {
+      "type": "youtube",
+      "url": "https://www.youtube.com/watch?v=5HRIAZiR1KQ",
+      "embed_code": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5HRIAZiR1KQ?si=81AL8jy23kztxmdw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "status": "Custom Trading Indicators & Alerts",
+    "date": "2021",
+    "type": "project",
+    "icon": "pi pi-chart-line",
+    "description": "Began developing an interest in financial markets and building custom tools for personal investment. Designed advanced TradingView Pine Script indicators and alert systems, integrated with Discord bots to deliver real-time trading signals. This project serves as a foundation for further development in the financial technology (FinTech) space.",
+    "company_name": "Self-Learning Project",
+    "country": "Tokyo, Japan",
+    "key_skills": [
+        "Pine Script",
+        "Technical Analysis",
+        "API Integration",
+        "Financial Markets",
+        "Trading System Development"
+    ]
+  },
+  {
+    "status": "Chrome Extension & Web App for E-commerce",
+    "date": "2020",
+    "type": "project",
+    "icon": "pi pi-cog",
+    "description": "Developed a full-stack solution with a Chrome extension and a web app to provide essential tools for online sellers and buyers. The platform featured a real-time price comparison panel on any website and an image-based search function to find similar products on eBay and AliExpress. While initially a personal project to support my own affiliate marketing efforts, the tools were also designed to serve the broader e-commerce community.",
+    "company_name": "Self-Learning Project",
+    "country": "Thailand (Remote)",
+    "key_skills": [
+        "Full-Stack Development",
+        "Chrome Extension Development",
+        "Vue.js",
+        "API Integration",
+        "E-commerce",
+        "Affiliate Marketing",
+        "UI/UX Design"
+    ],
+    "media": {
+      "type": "youtube",
+      "url": "https://www.youtube.com/watch?v=mZkORkdOWHA",
+      "embed_code": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/mZkORkdOWHA?si=Pvjbkmt7OHy2YjOx\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "status": "Chrome Extension & Web App for Online Sellers",
+    "date": "2018",
+    "type": "project",
+    "icon": "pi pi-cog",
+    "description": "Developed a comprehensive set of internal tools, including a Chrome extension and a web app, to streamline my own Amazon business operations. Some functions were later shared with Thai Amazon sellers, providing solutions for tasks like keyword analysis and trademark checks.",
+    "company_name": "Self-Learning Project",
+    "country": "Thailand (Remote)",
+    "key_skills": [
+        "Full-Stack Development",
+        "Vue.js",
+        "Node.js",
+        "API Integration",
+        "E-commerce Operations",
+        "Keyword Research"
+    ],
+    "media": {
+      "type": "youtube",
+      "url": "https://www.youtube.com/watch?v=0jZ6ix9ziD0",
+      "embed_code": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/0jZ6ix9ziD0?si=cJdG_ZBjZ9UfTLgW\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "status": "Founded an Export & E-commerce Business",
+    "date": "2017",
+    "type": "business",
+    "icon": "pi pi-cart-plus",
+    "description": "Established and managed a private export and e-commerce business on Amazon USA with a team based in Thailand. I have been working remotely from Japan since 2017. Applied data-driven product research, keyword analytics, and branding to drive sales growth. Built Python automation scripts to streamline operations and gained expertise in marketplace analytics, customer behavior, and performance optimization.",
+    "company_name": "Self-Learning Project",
+    "company_url": null,
+    "country": "Thailand (Remote)",
+    "key_skills": [
+      "E-commerce strategy",
+      "Data analysis",
+      "Tools and automations",
+      "Branding"
+    ],
+    "demo_links": [
+      {
+        "name": "Amazon Seller KPI dashboard demo",
+        "url": "kpi-demo/index.html"
+    }]
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "status": "Concluded my role at Schlumberger",
+    "date": "2017",
+    "type": "work",
+    "icon": "pi pi-briefcase",
+    "description": "Successfully completed my role at Schlumberger, having contributed to key projects and developed advanced skills in directional drilling.",
+    "company_name": "Schlumberger",
+    "company_logo": "/static/images/SLB.png", 
+    "company_url": "https://www.slb.com/", 
+    "country": "Thailand"
+  },
+  {
+    "status": "Advanced Certification in Directional Drilling",
+    "date": "2014",
+    "type": "job-training",
+    "icon": "pi pi-id-card",
+    "description": "Completed specialized training to become a certified Directional Driller, a key role in complex drilling operations.",
+    "company_name": "Schlumberger",
+    "company_logo": "/static/images/SLB.png", 
+    "company_url": "https://www.slb.com/", 
+    "country": "Abu Dhabi, UAE",
+    "key_skills": [
+      "Directional drilling techniques",
+      "Wellbore navigation and planning",
+      "Geosteering and formation evaluation",
+      "Client communication management"
+    ]
+  },
+  {
+    "status": "Advanced Job Training for Lead Engineer Role",
+    "date": "2013",
+    "type": "job-training",
+    "icon": "pi pi-id-card",
+    "description": "Completed a second intensive training program to prepare for a leadership MLWD in the field.",
+    "company_name": "Schlumberger",
+    "company_logo": "static/images/SLB.png", 
+    "company_url": "https://www.slb.com/", 
+    "country": "Houston, USA",
+    "key_skills": [
+      "Leadership and team management",
+      "Advanced data logging and analysis",
+      "Complex project management",
+      "Field operations and safety leadership"
+    ]
+  },
+  {
+    "status": "Completed MLWD Engineer Job Training",
+    "date": "2012",
+    "type": "job-training",
+    "icon": "pi pi-id-card",
+    "description": "Successfully completed intensive job training to become a certified field engineer.",
+    "company_name": "Schlumberger",
+    "company_logo": "static/images/SLB.png", 
+    "company_url": "https://www.slb.com/", 
+    "country": "Abu Dhabi, UAE",
+    "key_skills": [
+      "Field operations and safety protocols",
+      "Data acquisition and analysis",
+      "Equipment maintenance and troubleshooting"
+    ]
+  },
+  {
+    "status": "Joined Schlumberger as an MLWD Engineer",
+    "date": "2012",
+    "type": "work",
+    "icon": "pi pi-briefcase",
+    "description": "Joined a new team as a field engineer.",
+    "company_name":"Schlumberger",
+    "company_logo": "static/images/SLB.png", 
+    "company_url": "https://www.slb.com/", 
+    "country": "Bangkok, Thailand"
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "status": "Graduated with a Master of Engineering in Electrical Engineering and Information Systems",
+    "date": "2012",
+    "type": "education",
+    "icon": "pi pi-graduation-cap",
+    "description": "",
+    "university_name":"The University of Tokyo",
+    "university_logo": "static/images/todai_logo.png", 
+    "university_url": "https://www.u-tokyo.ac.jp/en", 
+    "country": "Tokyo, Japan",
+    "media": {
+      "type": "image",
+      "url": "static/images/todai.webp"
+    }
+  },
+  {
+    "status": "Awarded 1’st Place Student Poster Presentation",
+    "date": "2012",
+    "type": "award",
+    "icon": "pi pi-star-fill",
+    "description": "Presented our research at 3’rd Asia-Pacific Optical Sensors Conference.",
+    "country": "Sydney, Australia",
+    "conferences": [
+      {
+        "name": "3’rd Asia-Pacific Optical Sensors Conference",
+        "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/8351/835136/1-cm-spatial-resolution-with-large-dynamic-range-in-strain/10.1117/12.914248.short" 
+      }
+    ]
+  },
+  {
+    "status": "Awarded “The Best Presentation Award”",
+    "date": "2011",
+    "type": "award",
+    "icon": "pi pi-star-fill",
+    "description": "Presented our research at the 4’th Thailand-Japan International Academic Conference.",
+    "country": "Tokyo, Japan"
+  },
+  {
+    "status": "Presented a paper on BOCDR Optical Fiber Sensors",
+    "date": "2011",
+    "type": "conference",
+    "icon": "pi pi-microphone",
+    "description": "Presented our research findings at several international conferences, including:",
+    "country": "Japan",
+    "conferences": [
+      {
+        "name": "48th Lightwave Sensing Technology Conference (LST48-9)",
+        "url": "https://annex.jsap.or.jp/kohasensing/pdf/LSTback47_53.pdf" 
+      },
+      {
+        "name": "17th Micro-optics International Conference",
+        "url": "https://ieeexplore.ieee.org/author/38235210100" 
+      }
+    ]
+  },
+  {
+    "status": "Awarded Japanese Government (MEXT) Scholarship",
+    "date": "2009",
+    "type": "award",
+    "icon": "pi pi-star-fill",
+    "description": "Received a highly-competitive Monbukagakusho (MEXT) scholarship for a Master's degree at the University of Tokyo.",
+    "country": "Tokyo, Japan"
+  },
+  {
+    "status": "Graduated with a Bachelor of Electrical Engineering",
+    "date": "2008",
+    "type": "education",
+    "icon": "pi pi-graduation-cap",
+    "description": "",
+    "university_name":"Chulalongkorn University",
+    "university_logo": "static/images/chula_logo.png", 
+    "university_url": "https://www.chula.ac.th/en", 
+    "country": "Bangkok, Thailand"
+  },
+  {
+    "status": "Awarded Academic Junior Science Talent Project (JSTP) Scholarship",
+    "date": "2004",
+    "type": "award",
+    "icon": "pi pi-star-fill",
+    "description": "Received a full scholarship from NSTDA for my bachelor's degree",
+    "country": "Bangkok, Thailand"
+  }
+]

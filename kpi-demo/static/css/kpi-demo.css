@@ -1,0 +1,55 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+.container { max-width: 1200px; margin: auto; }
+h1 { text-align: center; color: #1f4068; }
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.chart-box {
+    flex: 1 1 calc(50% - 20px);
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    min-height: 400px;
+}
+.chart-box h2 {
+    margin-top: 0;
+    color: #1f4068;
+}
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    background: #2c3e50;
+    color: #fff;
+    border-radius: 6px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+.axis path, .axis line {
+    fill: none;
+    stroke: #dcdde1;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-size: 12px;
+    fill: #7f8c8d;
+}
+.line {
+    fill: none;
+    stroke: #2ecc71;
+    stroke-width: 2px;
+}
+.bar { fill: #3498db; }
+.bar:hover { fill: #2980b9; }
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .dashboard-container { flex-direction: column; }
+    .chart-box { flex-basis: 100%; }
+}

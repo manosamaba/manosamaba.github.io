@@ -1,0 +1,80 @@
+<header id="header" class="header bg-white shadow-sm py-4">
+  <div class="container">
+      <nav class="d-none d-md-flex navbar navbar-light justify-content-between align-items-center">
+          <div class="navbar-brand d-flex align-items-center" href="{{ site.base_url }}">
+              <img 
+                  src="static/images/profile.jpg" 
+                  alt="{{ site.author.name }}" 
+                  width="100"
+                  class="img-fluid rounded-circle profile-pic-md shadow-sm me-3"
+              >
+              <div class="d-flex flex-column">
+                  <h3 class="mb-0 text-dark">{{ site.author.name }}</h3>
+                  <h5 class="mb-0 text-muted">{{ site.author.headline }}</h5>
+                  {% if site.author.motto %}
+                      <h6 class="mb-1 text-muted fs-6">{{ site.author.motto }}</h6>
+                  {% endif %}
+                  {% if site.author.location %}
+                      <p class="mb-0 text-muted"><small><i class="pi pi-map-marker me-1"></i> {{ site.author.location }}</small></p>
+                  {% endif %}
+              </div>
+            </div>
+
+          <div class="social-links d-flex">
+              {% if site.author.linkedin %}
+                  <a href="{{ site.author.linkedin }}" target="_blank" class="social-icon text-decoration-none ms-2">
+                      <i class="pi pi-linkedin"></i>
+                  </a>
+              {% endif %}
+              {% if site.author.github %}
+                  <a href="{{ site.author.github }}" target="_blank" class="social-icon text-decoration-none ms-2">
+                      <i class="pi pi-github"></i>
+                  </a>
+              {% endif %}
+              {% if site.author.email %}
+                  <a href="mailto:{{ site.author.email }}" target="_blank" class="social-icon text-decoration-none ms-2">
+                      <i class="pi pi-envelope"></i>
+                  </a>
+              {% endif %}
+          </div>
+      </nav>
+
+      <nav class="d-md-none navbar navbar-light d-flex flex-column text-center">
+          <div class="mb-2">
+              <img 
+                  src="static/images/profile.jpg" 
+                  alt="{{ site.author.name }}" 
+                  width="60"
+                  class="img-fluid rounded-circle profile-pic-sm shadow-sm"
+              >
+          </div>
+
+          <h5 class="mb-1 fw-bold">{{ site.author.name }}</h5>
+          <p class="mb-1 text-muted"><small>{{ site.author.headline }}</small></p>
+          {% if site.author.motto %}
+              <p class="mb-1 text-muted fs-6">{{ site.author.motto }}</small></p>
+          {% endif %}
+          {% if site.author.location %}
+              <p class="mb-2 text-muted"><small><i class="pi pi-map-marker me-2"></i> {{ site.author.location }}</small></p>
+          {% endif %}
+
+          <div class="social-links mt-2">
+              {% if site.author.linkedin %}
+                  <a href="{{ site.author.linkedin }}" target="_blank" class="social-icon text-decoration-none mx-2">
+                      <i class="pi pi-linkedin"></i>
+                  </a>
+              {% endif %}
+              {% if site.author.github %}
+                  <a href="{{ site.author.github }}" target="_blank" class="social-icon text-decoration-none mx-2">
+                      <i class="pi pi-github"></i>
+                  </a>
+              {% endif %}
+              {% if site.author.email %}
+                  <a href="mailto:{{ site.author.email }}" target="_blank" class="social-icon text-decoration-none mx-2">
+                      <i class="pi pi-envelope"></i>
+                  </a>
+              {% endif %}
+          </div>
+      </nav>
+  </div>
+</header>

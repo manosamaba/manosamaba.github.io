@@ -1,0 +1,135 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+    <section class="my-5">
+        <h2 class="text-center mb-5 fw-bold">My Journey</h2>
+        <div class="timeline-container">
+            {% set ns = namespace(content_index=0) %}
+            {% for item in timeline_data %}
+                {% if item.type == 'separator' %}
+                    <hr class="my-5" />
+                {% else %}
+                    {% set ns.content_index = ns.content_index + 1 %}
+                    {% set item_class = 'left-item' if ns.content_index is odd else 'right-item' %}
+            
+                    <div class="timeline-item {{ item_class }}">
+                        <div class="timeline-marker-wrapper">
+                            <div class="timeline-dot {{ item.type }}">
+                                <i class="{{ item.icon }}"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-date-container">
+                            <p class="text-muted timeline-date"><small>{{ item.date }}</small></p>
+                        </div>
+                        <div class="timeline-content">
+                            <h5 class="mb-2 fw-bold">{{ item.status }}</h5>
+            
+                            {% if item.university_logo and item.university_url %}
+                                <a href="{{ item.university_url }}" target="_blank" class="text-decoration-none timeline-link">
+                                    <div class="timeline-info-grid">
+                                        <img src="{{ item.university_logo }}" alt="University Logo" class="timeline-logo">
+                                        <p class="mb-0">{{ item.university_name }}</p>
+                                    </div>
+                                </a>
+                            {% endif %}
+                            {% if item.company_name %}
+                                {% if item.company_name == 'Self-Learning Project' %}
+                                    <div class="timeline-info-grid">
+                                        {% if item.icon %}
+                                            <i class="pi pi-lightbulb timeline-icon-lg"></i>
+                                        {% endif %}
+                                        <p class="mb-0">{{ item.company_name }}</p>
+                                    </div>
+                                {% else %}
+                                    <a href="{{ item.company_url }}" target="_blank" class="text-decoration-none timeline-link">
+                                        <div class="timeline-info-grid">
+                                            {% if item.company_logo %}
+                                                <img src="{{ item.company_logo }}" alt="{{ item.company_name }} Logo" class="timeline-logo">
+                                            {% endif %}
+                                            <p class="mb-0">{{ item.company_name }}</p>
+                                        </div>
+                                    </a>
+                                {% endif %}
+                            {% endif %}
+                            {% if item.country %}
+                                <div class="timeline-info-grid">
+                                    <i class="pi pi-map-marker"></i>
+                                    <p class="mb-0">{{ item.country }}</p>
+                                </div>
+                            {% endif %}
+            
+                            <p class="mb-2">{{ item.description }}</p>
+            
+                            {% if item.conferences %}
+                                <ul class="list-unstyled">
+                                    {% for conference in item.conferences %}
+                                        <li>
+                                            <i class="pi pi-link me-2"></i>
+                                            <a href="{{ conference.url }}" target="_blank" class="timeline-link">
+                                                {{ conference.name }}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+
+                            {% if item.demo_links %}
+                                <p class="timeline-sub-heading mt-3">Demos:</p>
+                                <ul class="list-unstyled">
+                                    {% for demo in item.demo_links %}
+                                        <li>
+                                            <a href="#" class="timeline-link" data-bs-toggle="modal" data-bs-target="#demoModal" data-src="{{ demo.url }}">
+                                                <i class="pi pi-link me-2"></i>{{ demo.name }}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+
+                            <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="demoModalLabel"></h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="ratio ratio-16x9">
+                                                <iframe id="demoIframe" src="" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            {% if item.key_skills %}
+                                <p class="fw-bold mt-3 mb-2">Key Skills:</p>
+                                <div>
+                                    {% for skill in item.key_skills %}
+                                        <span class="badge rounded me-2 mb-0" style="background-color: lch(98.27% 0.01 296.81); color: #333;">{{ skill }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+            
+                            {% if item.media %}
+                                <div class="timeline-media my-3">
+                                    {% if item.media.type == 'image' %}
+                                        <img src="{{ item.media.url }}" alt="{{ item.status }}" class="img-fluid rounded shadow">
+                                    {% elif item.media.type == 'youtube' %}
+                                        <div class="ratio ratio-16x9">
+                                            {{ item.media.embed_code | safe }}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+            
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}
+{% block scripts %}
+    <script src="static/js/main.js"></script>
+{% endblock %}
