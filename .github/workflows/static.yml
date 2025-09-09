@@ -1,14 +1,23 @@
-name: Build & Publish to User Site
+# .github/workflows/pages.yml
+name: Build & Deploy (Pages)
 
 on:
   push:
     branches: [main]
-  workflow_dispatch:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  publish:
+  build-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,36 +32,32 @@ jobs:
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          restore-keys: ${{ runner.os }}-pip-
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # ⬇️ รันสคริปต์ของคุณให้สร้างไฟล์ลงในโฟลเดอร์ dist/
       - name: Build static site
         run: |
           rm -rf dist
           mkdir -p dist
           python generate_pages.py
-          # ถ้า generate_pages.py ยังไม่ได้เขียนลง dist โดยตรง
-          # ให้ย้าย/คัดลอกผลลัพธ์มาไว้ใน dist แทน เช่น:
-          # mv output/* dist/  # (ปรับตามโครงสร้างของคุณ)
-
-      - name: Ensure .nojekyll
-        run: touch dist/.nojekyll
+          date -u +"build UTC: %Y-%m-%d %H:%M:%S" > dist/health.txt
+          touch dist/.nojekyll
 
       - name: Show dist (debug)
         run: |
           echo "----- dist listing -----"
           find dist -maxdepth 3 -type f | sort
 
-      - name: Deploy to manosamaba.github.io
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          personal_token: ${{ secrets.GH_PAT }}
-          external_repository: manosamaba/manosamaba.github.io
-          publish_branch: main
-          publish_dir: ./dist
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
+          path: dist
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
